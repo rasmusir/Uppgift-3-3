@@ -1,1 +1,163 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+
+html, body
+{
+    font-family: verdana,sans-serif;
+    color: #797066;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+a
+{
+    color: #797066;
+}
+
+h1
+{
+    font-family: Times New Roman, serif;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+h2
+{
+    font-family: Times New Roman, serif;
+    font-weight: normal;
+}
+
+#container
+{
+    width: 600px;
+    border: 1px solid #cecab9;
+    background: #eae7d2;
+    margin: 0 auto;
+}
+
+#topbar
+{
+    background: #51473d;
+    color: #eae7d2;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: right;
+    padding-right: 4px;
+}
+
+#menu
+{
+    width: 600px;
+    height: 236px;
+    background: url("pics/coffey.jpg") #51473d no-repeat;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+
+#menu a
+{
+    display: none;
+}
+
+#menu ul
+{
+    margin: 0px;
+    height: 30px;
+    list-style-type: none;
+    position: absolute;
+    bottom: 1px;
+    padding: 0px;
+    padding-left: 10px;
+}
+
+#menu li
+{
+    float: left;
+    margin: 0px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-left: 1px;
+    border-top: 1px solid #847c73;
+    color: #eae7d2;
+}
+
+#menu ul a:hover
+{
+    background: #9c9084;
+}
+
+#menu ul .active a:hover
+{
+    background: #eae7d2;
+}
+
+#menu ul a
+{
+    display: block;
+    margin: 0px;
+    padding: 0px 20px;
+    text-decoration: none;
+    background: #797066;
+    color: inherit;
+    transition: background 0.2s;
+}
+
+#menu .active
+{
+    color: #797066;
+    border-top: 1px solid #51473d;
+    border-bottom: 1px solid #eae7d2;
+}
+
+#menu .active a
+{
+    background: #eae7d2;
+}
+
+#content
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 600px;
+    padding-top: 30px;
+}
+
+#maincontent
+{
+    line-height: 1.7em;
+    padding: 10px;
+    flex: 1 0px;
+}
+
+#maincontent img
+{
+    float: left;
+    margin: 5px;
+}
+
+#subcontent
+{
+    
+    border-left: 1px dashed #c0c0c0;
+    text-align: justify;
+    font-size: 10px;
+    line-height: 2em;
+    max-width: 200px;
+    padding: 10px;
+    flex: 1 auto;
+}
+
+#subcontent ul
+{
+    list-style-type: none;
+    padding: 0px;
+    font-size: 12px;
+}
+
+#bottomcontent
+{
+    flex: 1 100%;
+    padding: 10px;
+    font-size: 10px;
+    font-style: italic;
+}
